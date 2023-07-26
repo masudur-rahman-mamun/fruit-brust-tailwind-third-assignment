@@ -2,85 +2,143 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Font Awesomr For Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Lato Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <!-- Link with tailwind and daisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Nessary CSS -->
-    <style>
-        .lato-font {
-            font-family: 'Lato', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Font Awesomr For Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Lato Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <!-- Link with tailwind and daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Nessary CSS -->
+  <style>
+    .lato-font {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
 </head>
 
 <body class="lato-font">
-    <Header class="w-4/5 m-auto">
-        <!-- Navbar -->
-        <nav class="my-10">
-            <div class=" flex justify-between navbar bg-[#F85559] rounded-full px-8">
-                <div class="flex-none">
-                    <ul class="menu menu-horizontal px-1 font-medium text-[#fff]">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits </a></li>
-                    </ul>
-                </div>
-                <div class="navbar-center">
-                    <img src="./images/logo.png" class="w-8" alt="">
-                    <a class="text-3xl text-[#fff] font-medium ml-1">daisyUI</a>
-                </div>
-                <div class="flex-none gap-2">
-                    <div class="form-control ">
-                        <input type="text" placeholder="Search" class="input input-bordered w-30 h-8 md:w-auto rounded-full" />
-                    </div>
-                </div>
-            </div>
-        </nav>
+  <Header class="w-4/5 m-auto">
+    <!-- Navbar -->
+    <nav class="my-10">
+      <div class=" lg:flex justify-between navbar bg-[#F85559] rounded-full px-8">
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1 font-medium text-[#fff]">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits </a></li>
+          </ul>
+        </div>
+        <div class="navbar-center">
+          <img src="./images/logo.png" class="w-8" alt="">
+          <a class="text-3xl text-[#fff] font-medium ml-1">daisyUI</a>
+        </div>
+        <div class="flex-none gap-2">
+          <div class="form-control flex flex-row">
+            <input type="text" placeholder="Search" class="input input-bordered w-30 h-8 md:w-auto rounded-full" />
+            <button>
+              <i class="fa-solid fa-magnifying-glass -ml-9"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-        <!-- Banner Section -->
-        <section>
-            <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide4" class="carousel-item relative w-full">
-                  <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
-                </div>
-              </div>
-        </section>
-    </Header>
+    <!-- Banner Section -->
+    <section>
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="/images/banner1.png" class="w-full  " />
+          <div class="absolute inset-0 bg-gradient-to-b from-[#121212] to-[#edecea] opacity-30"></div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+          <div class="text-center absolute ml-80 mt-28 ">
+            <h2 class="text-5xl font-medium text-white">Exotic tastes at your <br> doorstep</h2>
+            <p class="text-xl font-medium text-white mt-5">We supply highly quality organic products</p>
+            <button class="text-xl btn bg-[#F85559] text-white border-0 mt-5"> Shop Now</button>
+          </div>
+
+          <div class="w-4/5 p-5 m-0 bg-white flex justify-around absolute mt-96 ml-28 rounded-lg">
+            <img src="./images/fruit1.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit2.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit3.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit4.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit5.png" class="w-20 h-24" alt="">
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="/images/banner2.png" class="w-full" />
+          <div class="absolute inset-0 bg-gradient-to-b from-[#121212] to-[#edecea] opacity-30"></div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+          <div class="text-center absolute ml-80 mt-28 ">
+            <h2 class="text-5xl font-medium text-white">Exotic tastes at your <br> doorstep</h2>
+            <p class="text-xl font-medium text-white mt-5">We supply highly quality organic products</p>
+            <button class="text-xl btn bg-[#F85559] text-white border-0 mt-5"> Shop Now</button>
+          </div>
+          <div class="w-4/5 p-5 m-0 bg-white flex justify-around absolute mt-96 ml-28 rounded-lg">
+            <img src="./images/fruit1.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit2.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit3.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit4.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit5.png" class="w-20 h-24" alt="">
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="/images/banner3.png" class="w-full" />
+          <div class="absolute inset-0 bg-gradient-to-b from-[#121212] to-[#edecea] opacity-30"></div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+          <div class="text-center absolute ml-80 mt-28 ">
+            <h2 class="text-5xl font-medium text-white">Exotic tastes at your <br> doorstep</h2>
+            <p class="text-xl font-medium text-white mt-5">We supply highly quality organic products</p>
+            <button class="text-xl btn bg-[#F85559] text-white border-0 mt-5"> Shop Now</button>
+          </div>
+          <div class="w-4/5 p-5 m-0 bg-white flex justify-around absolute mt-96 ml-28 rounded-lg">
+            <img src="./images/fruit1.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit2.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit3.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit4.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit5.png" class="w-20 h-24" alt="">
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="/images/banner4.png" class="w-full" />
+          <div class="absolute inset-0 bg-gradient-to-b from-[#121212] to-[#edecea] opacity-30"></div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+          <div class="text-center absolute ml-80 mt-28 ">
+            <h2 class="text-5xl font-medium text-white">Exotic tastes at your <br> doorstep</h2>
+            <p class="text-xl font-medium text-white mt-5">We supply highly quality organic products</p>
+            <button class="text-xl btn bg-[#F85559] text-white border-0 mt-5"> Shop Now</button>
+          </div>
+          <div class="w-4/5 p-5 m-0 bg-white flex justify-around absolute mt-96 ml-28 rounded-lg">
+            <img src="./images/fruit1.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit2.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit3.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit4.png" class="w-20 h-24" alt="">
+            <img src="./images/fruit5.png" class="w-20 h-24" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </Header>
 </body>
 
 </html>
